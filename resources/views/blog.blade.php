@@ -79,13 +79,13 @@
 		</div>
 		<div class="col-sm-6" style="text-align: right;">
 			<ul style="list-style: none;">
-				<li><a href="career.html" style="text-decoration: none; color: #fff;">Career</a></li>
-				<li>FAQ</li>
-				<li><a href="blog.html" style="text-decoration: none; color: #fff;">Blog</a></li>
-				<li><a href="feedback.html" style="text-decoration: none; color: #fff;">Feedback</a></li>
-				<li>Privacy</li>
-				<li>Terms</li>
-			</ul>
+		        <li><a href="{!! url('/career'); !!}" style="text-decoration: none; color: #fff;">Career</a></li>
+		        <li><a href="{!! url('/faq'); !!}" style="text-decoration: none; color: #fff;">FAQ</li>
+		        <li><a href="{!! url('/blog'); !!}" style="text-decoration: none; color: #fff;">Blog</a></li>
+		        <li><a href="{!! url('/feedback'); !!}" style="text-decoration: none; color: #fff;">Feedback</a></li>
+		        <li>Privacy</li>
+		        <li>Terms</li>
+		      </ul>
 			<p>Copyright © 2017 Think Different Technologies (P) Ltd</p>
 		</div>
 	</div>	

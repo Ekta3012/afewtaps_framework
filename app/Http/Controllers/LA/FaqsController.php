@@ -201,7 +201,12 @@ class FaqsController extends Controller
 			return redirect(config('laraadmin.adminRoute')."/");
 		}
 	}
-	
+	public function view()
+	{
+		$faq=Faq::all();
+
+    	return view('faq', ['faq' => $faq]);
+	}
 	/**
 	 * Datatable Ajax fetch
 	 *

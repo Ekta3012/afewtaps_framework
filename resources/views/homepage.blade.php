@@ -329,7 +329,7 @@
                     <div class="col-sm-6">
                         <ul id="footer_list">
                             <li><a href="{!! url('/career'); !!}" style="text-decoration: none; color: #fff;">Career</a></li>
-                            <li>FAQ</li>
+                            <li><a href="{!! url('/faq'); !!}" style="text-decoration: none; color: #fff;">FAQ</a></li>
                             <li><a href="{!! url('/blog'); !!}" style="text-decoration: none; color: #fff;">Blog</a></li>
                             <li><a href="{!! url('/feedback'); !!}" style="text-decoration: none; color: #fff;">Feedback</a></li>
                             <li>Privacy</li>

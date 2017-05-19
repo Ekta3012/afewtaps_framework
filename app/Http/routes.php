@@ -32,6 +32,7 @@ Route::get('/career', function () {
 Route::get('/feedback', function () {
     return view('feedback');
 });
+Route::get('/faq', 'LA\FaqsController@view');
 /* ================== Homepage + Admin Routes ================== */
 
 require __DIR__.'/admin_routes.php';

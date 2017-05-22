@@ -68,10 +68,7 @@
 					<h2>Taking Customer Orders</h2>
 				</div>
 				<div class="col-sm-4">
-					<div class="form-group has-feedback has-feedback-left">										
-						<i class="form-control-feedback glyphicon glyphicon-search"></i><input type="text" placeholder="search" class="form-control" style="border:0px; background-color: transparent; border-bottom: 1px solid #a7a3a3; border-radius: 0px; box-shadow: none;">
-						
-					</div>					
+					<img src="images/search_slide.png" class="img-responsive">				
 				</div>
 			</div>
 			<h4>Just type and enter to take customer orders. Its lightning fast and connected to your POS.</h4>
@@ -145,14 +142,14 @@
 			<p>
 				The Service app comes built-in with some real-time concepts to help the staff with better and efficient service.<br>Concepts that help food service outlets work better.
 			</p>
-			<div class="container built_in_row row">
+			<div class="built_in_row row">
 				<div class="col-sm-2 li1"  style="border-bottom: 1px solid #000;">
 					Escalation Limit
 				</div>
 				<div class="col-sm-2 li2">
 					Order Status
 				</div>
-				<div class="col-sm-2 li3">
+				<div class="col-sm-1 li3" style="padding-left: 0px; padding-right: 0px;">
 					New Orders
 				</div>
 				<div class="col-sm-2 li4">
@@ -161,11 +158,11 @@
 				<div class="col-sm-2 li5">
 					Threshold Limit
 				</div>
-				<div class="col-sm-2 li6">
+				<div class="col-sm-3 li6">
 					Last Order Notification
 				</div>
 			</div>	
-			<div class="built-in_content container">
+			<div class="built-in_content">
 			<div class="row li1_content">
 				<div class="col-sm-6">
 					<p>
@@ -218,17 +215,44 @@
 					</ul>
 				</div>
 				<div class="col-sm-6">
-					<img src="images/new_orders.png" class="img-responsive" style="height: 200px; margin: 0 auto;">
+					<img src="images/New.png" class="img-responsive" style="height: 200px; margin: 0 auto;">
 				</div>
 			</div>
-			<div class="li4_content">
-				
+			<div class="li4_content row">
+				<div class="col-md-6">
+					<p >Each order is encrypted with a “Timer”, from the time the customer places the order,until the order has been marked as Complete</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="images/servingtime.jpg" class="img-responsive" style="height: 200px; margin: 0 auto;">
+				</div>
 			</div>
-			<div class="li5_content">
-				
+			<div class="li5_content row">
+				<div class="col-sm-6">
+					<p >Threshold Limit is where a restaurant can fix a standard time for order preparation<br>and delivery and alert the service staff in case the order exceeds threshold limit.</p>
+					<p>For each order exceeding Threshold Limit, the staff is alerted<br>with the following techniques</p>
+					<ul >
+						<li style="font-weight:bold;">Customer Order Highlights</li>
+						<li>Order Timer indicates order exceeding Threshold Limit</li>
+					</ul>
+					<p >Please Note:The Service employees can reply back to the<br>customer with the expected order delivery time (optional).</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="images/threshold.png" class="img-responsive" style="height: 200px; margin: 0 auto;">
+				</div>
 			</div>
-			<div class="li6_content">
-				
+			<div class="li6_content row">
+				<div class="col-md-6" >
+					<p >The system asks the customer in case they wish to be notified for Last Orders<br>
+					at a restaurant and alerts the customers for Last Order timings<br>
+					of a particular Restaurant.
+					</p>
+					<p >Last Order Notifications are sent 15 minutes prior to the<br>
+					Last Order timings of a particular restaurant.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="images/lastordernotification.png" class="img-responsive" style="height: 200px; margin: 0 auto;">
+				</div>
 			</div>
 		</div>		
 		</div>	

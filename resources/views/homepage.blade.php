@@ -175,7 +175,7 @@
                 </div>
             </div>
         </div>  
-        <img src="images/star.png" class="img-responsive star_img" style="z-index: 1; position: absolute;"> 
+        <img src="images/star.png" class="img-responsive star_img" style="z-index: 1; position: absolute; margin-top: -35px;"> 
         <div class="row" style="background-color: #778899;">
             <div class="col-sm-1 col-xs-2 add">
                 <p class="vertical-text"><b></span> Add-ons for Customers</b></p>

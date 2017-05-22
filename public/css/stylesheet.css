@@ -433,7 +433,9 @@ span.sqr{
 	padding: 4%;
 	display: none;
 }
-.footer_li
+.built-in_content{
+	text-align: left;
+}
 .built-in_content{
 	padding: 3%;
 }
@@ -480,4 +482,7 @@ span.sqr{
 	.start_img {
         width: 10% !important;
     }
+}
+.li1_content{
+	padding-top: 3%;
 }

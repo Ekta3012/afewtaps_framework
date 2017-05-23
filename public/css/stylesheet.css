@@ -351,11 +351,12 @@ ul
 	padding-bottom: 5%;
 }
 span.sqr{
-	width: 250px !important;
-	height:250px !important;
-	text-align:center;
+	 width: 50vw;
+    height: 50vw;
+	text-align: center;
+	vertical-align: middle;
 	border-radius: 10px;
-	background-color: #dcdcdc;
+	background-color: #bdb8b8;
 	color: #fff;
 	font-weight: bolder;
 	padding: 1%;
@@ -485,4 +486,16 @@ span.sqr{
 }
 .li1_content{
 	padding-top: 3%;
+}
+.item_box{
+    height:500px;
+}
+ 
+.photo-thumb{
+    width:100%;
+    height:auto;
+    float:left; 
+    border: thin solid #d1d1d1;
+    margin:0 1em .5em 0;
+    float:left; 
 }

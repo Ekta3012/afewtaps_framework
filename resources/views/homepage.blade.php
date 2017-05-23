@@ -297,21 +297,57 @@
         </div>
         <div class="insta row">
             <img src="images/insta.png" class="img-responsive" style="margin: auto; width: 40px;">
-                <ul class="insta_list">
-                    <li>
-                        <img src="images/logo.png" class="img-responsive" style="width: 50px; border-radius: 25px; border:1px solid #000;">
-                    </li>
-                    <li>
-                        <h3>
+            <div class="row" style="padding-bottom: 5%; padding-top: 2%;">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-1">
+                    <img src="images/logo.png" class="img-responsive" style="width: 50px; border-radius: 25px; border:1px solid #000;">
+                </div>
+                <div class="col-sm-1">
+                    <h3>
                             afewtaps
                         </h3>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/afewtaps/"><button style="background-color: #fff; color: blue; padding: 13% 29%; border: 1px solid #000;    border-radius: 15px;">Follow</button></a>
-                    </li>
-                </ul>
-                <!-- <blockquote class="embedly-card"><h4><a href="https://www.instagram.com/afewtaps/">afewtaps® (@afewtaps) * Instagram photos and videos</a></h4><p>47 Followers, 25 Following, 7 Posts - See Instagram photos and videos from afewtaps® (@afewtaps)</p></blockquote>
-                <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> -->
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.instagram.com/afewtaps/"><img src="images/follow.png" class="img-responsive" style="height: 46px; vertical-align: middle; padding-left: 2%;">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+                <?php
+                    // use this instagram access token generator http://instagram.pixelunion.net/
+                    $access_token="2294090364.1677ed0.77254c412f0343b1a7b9b763358720be";
+                    $photo_count=6;
+                         
+                    $json_link="https://api.instagram.com/v1/users/self/media/recent/?";
+                    $json_link.="access_token={$access_token}&count={$photo_count}";
+                    $json = file_get_contents($json_link);
+                    $obj = json_decode($json, true, 512, JSON_BIGINT_AS_STRING);
+
+                    foreach ($obj['data'] as $post) {
+                         
+                        $pic_text=$post['caption']['text'];
+                        $pic_link=$post['link'];
+                        $pic_like_count=$post['likes']['count'];
+                        $pic_comment_count=$post['comments']['count'];
+                        $pic_src=str_replace("http://", "https://", $post['images']['standard_resolution']['url']);
+                        $pic_created_time=date("F j, Y", $post['caption']['created_time']);
+                        $pic_created_time=date("F j, Y", strtotime($pic_created_time . " +1 days"));
+                         
+                        echo "<div class='col-md-4 col-sm-6 col-xs-12 item_box'>";        
+                            echo "<a href='{$pic_link}' target='_blank'>";
+                                echo "<img class='img-responsive photo-thumb' src='{$pic_src}' alt='{$pic_text}'>";
+                            echo "</a>";
+                            echo "<p>";
+                                echo "<p>";
+                                    echo "<div style='color:#888;'>";
+                                        echo "<a href='{$pic_link}' target='_blank'>{$pic_created_time}</a>";
+                                    echo "</div>";
+                                echo "</p>";
+                                echo "<p>{$pic_text}</p>";
+                            echo "</p>";
+                        echo "</div>";
+                    }
+                    ?>
+                   
         </div>
         <div class="homepage_footer row">
             <div class="layer">
